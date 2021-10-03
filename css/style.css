@@ -1,0 +1,318 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+body {
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #242121;
+  letter-spacing: 0.6px;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url('../img/header-bg.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.header__top {
+  padding-top: 35px;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 100px;
+  text-align: center;
+  color: #01353E;
+  text-transform: uppercase;
+}
+
+.title::after {
+  position: absolute;
+  content: "/";
+  font-size: 72px;
+  line-height: 85px;
+  color: #00B2A0;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-left: -60px;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item + .menu__list-item {
+  margin-left: 43px;
+}
+
+.menu__list-link {
+  padding: 0 1px 5px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.menu__list-link:hover {
+  border-bottom: 1px solid #00b2a0;
+}
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 98px);
+}
+
+.header__title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 235px;
+  color: #0d302c;
+  margin-top: auto;
+}
+
+.header__subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 315px;
+}
+
+.header__icon {
+  content: url('../img/header-icon.svg');
+  margin-bottom: 92px;
+}
+
+/* About */
+.about {
+  padding: 190px 0 200px;
+}
+
+.about__text {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__text p {
+  max-width: 480px;
+  margin-right: 120px;
+  margin-bottom: 30px;
+}
+
+/* School */
+.school {
+  background-color: #f8f8f8;
+  padding: 200px 0 200px;
+}
+
+.school__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.school__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.school__item + .school__item {
+  margin-left: 55px;
+}
+
+.school__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.school__block-residance:before {
+  content: url("../img/sun.svg");
+  padding-right: 10px;
+  color: #00B2A0;
+}
+
+.school__block-insurance:before {
+  content: url("../img/airplane.svg");
+  padding-right: 10px;
+}
+
+.school__block-education:before {
+  content: url("../img/surfer.svg");
+  padding-right: 10px;
+}
+
+.school__item-title {
+  max-width: 190px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.school__item-text {
+  max-width: 350px;
+  padding-top: 10px;
+}
+
+.school__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.school__info {
+  flex: none;
+  max-width: 350px;
+}
+
+.school__info-text {
+  margin-bottom: 20px;
+}
+
+.school__info-item {
+  display: flex;
+  align-items: center;
+}
+
+.school__info-content {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.school__info-icon {
+  content: url("../img/scale.svg");
+  max-width: 56%;
+  padding-right: 10px;
+}
+
+.school__info-icon-second {
+  max-width: 74%;
+}
+
+.school__info-icon-third {
+  max-width: 87%;
+}
+
+.school__text {
+  max-width: 600px;
+}
+
+.school__text p {
+  margin-bottom: 30px;
+}
+
+/* Top */
+.top {
+  padding-bottom: 200px;
+}
+
+.top__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top__inner {
+  max-width: 570px;
+  padding-right: 59px;
+  padding-top: 200px;
+  padding-bottom: 130px;
+}
+
+.top__text p {
+  margin-bottom: 30px;
+}
+
+.top__bg {
+  position: absolute;
+  width: 50%;
+  min-height: 850px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  right: 0;
+}
