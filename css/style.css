@@ -201,14 +201,15 @@ body {
   flex-direction: column;
 }
 
-.school__item + .school__item {
-  margin-left: 55px;
+.school__item:not(:last-child)  {
+  margin-right: 55px;
 }
 
 .school__block {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .school__block-residance:before {
@@ -237,7 +238,7 @@ body {
 
 .school__item-text {
   max-width: 350px;
-  padding-top: 10px;
+  
 }
 
 .school__inner {
