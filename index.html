@@ -8,9 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css?=v1.0" />
   </head>
   <body>
@@ -245,7 +246,97 @@
     </section>
     <!-- /.Top -->
 
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery__top">
+          <h2 class="title gallery__title">Галерея</h2>
+
+          <div class="gallery__filter-btn">
+            <button class="gallery__btn" data-filter="all">Все</button>
+            <button class="gallery__btn" data-filter=".category-a">Туристы</button>
+            <button class="gallery__btn" data-filter=".category-b">Природа</button>
+            <button class="gallery__btn" data-filter=".category-c">Профи</button>
+          </div>
+        </div>
+
+        <div class="gallery__content">
+          <div class="gallery__item mix category-a">
+            <img src="img/gallery/1.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+          <div class="gallery__item mix category-a">
+            <img src="img/gallery/2.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+          <div class="gallery__item mix category-b">
+            <img src="img/gallery/3.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+          <div class="gallery__item mix category-c">
+            <img src="img/gallery/4.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+          <div class="gallery__item mix category-c">
+            <img src="img/gallery/5.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+          <div class="gallery__item mix category-c">
+            <img src="img/gallery/6.jpg" alt="gallery images" />
+            <a class="gallery__link" href="#"></a>
+          </div>
+        </div>
+
+        <div class="gallery__add">
+          <a class="gallery__add-btn" href="#">Показать ещё</a>
+        </div>
+      </div>
+
+      <blockquote class="blockquote">
+        <p class="blockquote__text">«Если сомневаешься – иди катайся.»</p>
+        <span class="blockquote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</span>
+      </blockquote>
+
+      <div class="container">
+        <div class="gallery__video" style="background-image: url(img/video-bg.jpg)">
+          <a data-fancybox class="gallery__video-link" href="https://youtu.be/U4RDCKR4fLE">
+            <img src="img/play.svg" alt="play icon" />
+          </a>
+        </div>
+
+        <div class="gallery__list">
+          <div class="gallery__numbers">
+            <h5 class="gallery__numbers-item">
+              450
+              <span>туристов</span>
+            </h5>
+          </div>
+          <div class="gallery__numbers">
+            <h5 class="gallery__numbers-item">
+              2500
+              <span>часов катания</span>
+            </h5>
+          </div>
+          <div class="gallery__numbers">
+            <h5 class="gallery__numbers-item">
+              10
+              <span>проф. тренеров</span>
+            </h5>
+          </div>
+          <div class="gallery__numbers">
+            <h5 class="gallery__numbers-item">
+              365
+              <span>дней в году</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.Gallery -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

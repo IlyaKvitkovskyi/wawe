@@ -356,3 +356,140 @@ body {
   background-repeat: no-repeat;
   right: 0;
 }
+
+.gallery {
+  padding: 0 0 183px;
+}
+
+.gallery__title {
+  margin-bottom: 212px;
+}
+
+.gallery__content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -40px;
+  margin-bottom: 50px;
+}
+
+.gallery__item {
+  position: relative;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.gallery__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4c4a4a;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gallery__item:hover .gallery__link {
+  opacity: 0.8;
+}
+
+.gallery__add {
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.gallery__add-btn {
+  display: inline-block;
+  padding: 24px 91px;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #242121;
+}
+
+.gallery__filter-btn {
+  margin-bottom: 50px;
+}
+
+.gallery__btn {
+  margin-right: 20px;
+  border: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: transparent;
+  outline: white;
+}
+
+.mixitup-control-active {
+  color: #00b2a0;
+}
+
+.blockquote {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 62px;
+  margin-bottom: 200px;
+  background-color: #f8f8f8;
+}
+
+.blockquote__text {
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 40px;
+  color: #242121;
+}
+
+.blockquote__author {
+  display: block;
+  text-align: right;
+  margin-right: 27%;
+  font-style: italic;
+}
+
+.gallery__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.gallery__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.gallery__numbers {
+  margin-right: 90px;
+}
+
+.gallery__numbers-item {
+  text-align: center;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #01353e;
+}
+
+.gallery__numbers:last-child {
+  margin-right: 0;
+}
+
+.gallery__numbers span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #242121;
+}
