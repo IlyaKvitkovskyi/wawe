@@ -598,3 +598,56 @@ body {
   font-weight: 400;
 }
 
+.pricing {
+  padding: 200px 0 200px;
+  background-color: #f8f8f8;
+}
+
+.pricing__title {
+  margin-bottom: 185px;
+}
+
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pricing__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  background-color: #fff;
+  padding: 45px 30px 45px;
+}
+
+ul.pricing__item-list {
+  margin-bottom: 40px;
+}
+
+.pricing__item-service {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.pricing__items-name,
+.pricing__items-num {
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #01353E;
+}
+
+.pricing__items-name {
+  margin-bottom: 58px;
+}
+
+.pricing__items-num {
+  margin-top: auto;
+}
+
+.pricing__items-num sup {
+  font-size: 18px;
+  line-height: 22px;
+}
+
