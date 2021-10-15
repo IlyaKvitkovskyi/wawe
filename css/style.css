@@ -509,7 +509,7 @@ body {
 }
 
 .slider__blog-item::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -635,7 +635,7 @@ ul.pricing__item-list {
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #01353E;
+  color: #01353e;
 }
 
 .pricing__items-name {
@@ -649,5 +649,118 @@ ul.pricing__item-list {
 .pricing__items-num sup {
   font-size: 18px;
   line-height: 22px;
+}
+
+.map {
+  box-sizing: initial;
+  min-height: 640px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 200px 200px;
+}
+
+.connection {
+  padding: 0 0 200px;
+}
+
+.connection__title {
+  margin-bottom: 200px;
+}
+
+.connection__content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.contacts {
+  font-style: normal;
+  flex-grow: 1;
+  min-height: 460px;
+  margin-top: 20px;
+  padding-top: 49px;
+  padding-left: 52px;
+  background-color: #f8f8f8;
+}
+
+.contact__text {
+  max-width: 325px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.contact__text-item {
+  margin-bottom: 65px;
+}
+
+.form {
+  min-width: 570px;
+  margin-right: 31px;
+}
+
+.form input {
+  margin-bottom: 18px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  border: none;
+  border-bottom: 2px solid #dadada;
+  width: 100%;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #00b2a0;
+}
+
+.form textarea {
+  resize: none;
+  padding-top: 40px;
+  min-height: 192px;
+}
+
+.form__btn {
+  display: block;
+  cursor: pointer;
+  max-width: 350px;
+  margin-top: 73px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  padding: 24px 111px 23px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+}
+
+.connection__social {
+  display: flex;
+  justify-content: center;
+}
+
+.connection__link {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 18px;
+  color: #242121;
+  text-transform: uppercase;
+}
+
+.connection__item + .connection__item {
+  margin-left: 10px;
+}
+
+.connection__link:hover {
+  color: #00B2A0;
 }
 
