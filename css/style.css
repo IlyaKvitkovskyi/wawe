@@ -761,6 +761,19 @@ ul.pricing__item-list {
 }
 
 .connection__link:hover {
-  color: #00B2A0;
+  color: #00b2a0;
 }
 
+.footer {
+  min-height: 200px;
+  background-color: #00b2a0;
+  padding-top: 67px;
+}
+
+.footer__logo {
+  display: block;
+}
+
+.footer__img {
+  margin: 0 auto;
+}
