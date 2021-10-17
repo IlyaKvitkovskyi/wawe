@@ -558,6 +558,7 @@ body {
 }
 
 .slick-dots button {
+  cursor: pointer;
   width: 15px;
   height: 15px;
   font-size: 0;
@@ -566,6 +567,10 @@ body {
   border: none;
   border-radius: 50%;
   opacity: 1;
+}
+
+.slick-dots button:hover {
+  opacity: 0.5;
 }
 
 .slick-dots .slick-active button {
