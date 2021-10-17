@@ -407,6 +407,13 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   color: #242121;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.gallery__add-btn:hover {
+  transition: 0.5s;
+  background-color: #c4c4c4;
 }
 
 .gallery__filter-btn {
@@ -471,11 +478,11 @@ body {
   margin: 0 auto;
 }
 
-.gallery__numbers {
+.gallery__pricebers {
   margin-right: 90px;
 }
 
-.gallery__numbers-item {
+.gallery__pricebers-item {
   text-align: center;
   font-weight: bold;
   font-size: 64px;
@@ -483,11 +490,11 @@ body {
   color: #01353e;
 }
 
-.gallery__numbers:last-child {
+.gallery__pricebers:last-child {
   margin-right: 0;
 }
 
-.gallery__numbers span {
+.gallery__pricebers span {
   display: block;
   font-weight: 300;
   font-size: 14px;
@@ -625,17 +632,20 @@ body {
   padding: 45px 30px 45px;
 }
 
-ul.pricing__item-list {
+ul.pricing__list {
   margin-bottom: 40px;
 }
 
-.pricing__item-service {
+.pricing__service {
   margin-bottom: 20px;
   font-weight: 400;
 }
 
-.pricing__items-name,
-.pricing__items-num {
+.pricing__name,
+.pricing__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-weight: 400;
   font-size: 36px;
@@ -643,17 +653,18 @@ ul.pricing__item-list {
   color: #01353e;
 }
 
-.pricing__items-name {
+.pricing__name {
   margin-bottom: 58px;
 }
 
-.pricing__items-num {
+.pricing__price {
   margin-top: auto;
 }
 
-.pricing__items-num sup {
+.pricing__price sup {
   font-size: 18px;
   line-height: 22px;
+  margin-left: 5px;
 }
 
 .map {
@@ -726,6 +737,7 @@ ul.pricing__item-list {
   font-size: 18px;
   line-height: 18px;
   color: #00b2a0;
+  padding: 0 5px;
 }
 
 .form textarea {
@@ -764,6 +776,7 @@ ul.pricing__item-list {
   line-height: 18px;
   color: #242121;
   text-transform: uppercase;
+  user-select: none;
 }
 
 .connection__item + .connection__item {
@@ -771,6 +784,7 @@ ul.pricing__item-list {
 }
 
 .connection__link:hover {
+  transition: 0.3s;
   color: #00b2a0;
 }
 
