@@ -743,6 +743,11 @@ ul.pricing__item-list {
   border: 1px solid #c4c4c4;
 }
 
+.form__btn:hover {
+  transition: 0.5s;
+  background-color: #c4c4c4;
+}
+
 .connection__social {
   display: flex;
   justify-content: center;
