@@ -95,7 +95,7 @@ body {
 }
 
 .header::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -153,6 +153,10 @@ body {
 .menu__list {
   position: relative;
   display: flex;
+}
+
+.menu__btn {
+  display: none;
 }
 
 .menu__item + .menu__item {
@@ -899,6 +903,14 @@ ul.pricing__list {
     margin-right: 0;
   }
 
+  .menu__link {
+    font-size: 20px;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+
   .header__top {
     padding-top: 35px;
   }
@@ -945,5 +957,64 @@ ul.pricing__list {
 
   .team__items {
     padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 860px) {
+  .menu__list {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #000;
+    text-align: center;
+    transform: translateY(-200%);
+    transition: all .5s;
+  }
+
+  ul.menu__list {
+    padding: 90px 0 15px;
+  }
+
+  .menu__item + .menu__item {
+    margin-left: 0;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 15px 0;
+  }
+
+  .logo {
+    position: relative;
+    z-index: 2;
+    padding-left: 30px;
+  }
+
+  .menu__btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .header__top-inner.header__top-inner--active .menu__list {
+    transform: translateY(0%);
+  }
+
+  .header__item {
+    font-size: 120px;
+    line-height: 1.5em;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 18px;
   }
 }
