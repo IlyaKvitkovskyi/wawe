@@ -1197,3 +1197,129 @@ ul.pricing__list {
     padding-top: 19px;
   }
 }
+
+@media (max-width: 440px) {
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .header__item {
+    font-size: 100px;
+    line-height: 1.2em;
+  }
+
+  .header__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .about,
+  .school {
+    padding-top: 0;
+    padding: 15px 0;
+  }
+
+  .about__title {
+    font-size: 17px;
+    max-width: 215px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .about__text {
+    padding: 20px 10px 0;
+  }
+
+  .top {
+    padding: 30px 0;
+  }
+
+  .top__title {
+    margin-bottom: 30px;
+  }
+
+  .gallery {
+    padding: 50px 0;
+  }
+
+  .gallery__filter-btn {
+    display: table-caption;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+
+  .gallery__btn {
+    margin-bottom: 10px;
+  }
+
+  .gallery__add-btn {
+    padding: 20px 20px 20px;
+  }
+
+  .blockquote {
+    margin-bottom: 50px;
+  }
+
+  .blockquote__text {
+    font-size: 18px;
+  }
+
+  .blockquote__author {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .slider__blog {
+    padding-bottom: 50px;
+  }
+
+  .slider__blog-item {
+    height: 300px;
+  }
+
+  .slider__blog-item-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .slick-dots {
+    bottom: 45px;
+  }
+
+  .slick-dots button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-dots .slick-active button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .form__btn {
+    padding: 25px 0 25px;
+  }
+
+  ul.connection__social {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .connection__item + .connection__item {
+    margin-left: 0px;
+  }
+
+  .connection__content {
+    margin-bottom: 50px;
+  }
+
+  a.connection__link {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+  }
+}
